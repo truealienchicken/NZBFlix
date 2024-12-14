@@ -21,6 +21,3 @@ This app is built entirely programmatically without using storyboards, leveragin
 
 **Why NZBFlix?**  
 NZBFlix simplifies your home media server workflow by providing an intuitive, TV-friendly interface for discovering and downloading content straight from your tvOS device. Perfect for media enthusiasts using automation tools like Radarr, Sonarr, and NZBGet.  
-
-**Contribute:**  
-This project is open source and welcomes contributions! Check out our [issues](#) and start collaborating.
