@@ -132,7 +132,7 @@ class SearchMediaResultsViewController: UITableViewController, UITextFieldDelega
                 let searchResults = try JSONDecoder().decode([MediaResult].self, from: data)
                 DispatchQueue.main.async {
                     self.results = searchResults
-                    print(searchResults)
+                    //print(searchResults)
                     self.tableView.reloadData()
                 }
             } catch {

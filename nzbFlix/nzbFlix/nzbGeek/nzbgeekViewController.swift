@@ -24,7 +24,7 @@ class nzbgeekViewController: UIViewController, UICollectionViewDataSource, UICol
 
         // Set up the collection view layout
         let layout = UICollectionViewFlowLayout()
-        layout.itemSize = CGSize(width: 200, height: 300)
+        layout.itemSize = CGSize(width: 300, height: 500)
         layout.minimumLineSpacing = 16
         layout.minimumInteritemSpacing = 16
 

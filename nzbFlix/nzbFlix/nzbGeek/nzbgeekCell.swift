@@ -18,7 +18,7 @@ class nzbgeekCell: UICollectionViewCell {
         contentView.addSubview(imageView)
 
         // Configure title label
-        titleLabel.font = .systemFont(ofSize: 16, weight: .bold)
+        titleLabel.font = .systemFont(ofSize: 26, weight: .bold)
         titleLabel.textColor = .white
         titleLabel.textAlignment = .center
         titleLabel.numberOfLines = 3 // Allow up to 3 lines

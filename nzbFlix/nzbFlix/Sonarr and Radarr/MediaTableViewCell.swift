@@ -18,21 +18,21 @@ class MediaTableViewCell: UITableViewCell {
         
         // Configure title label
         titleLabel.translatesAutoresizingMaskIntoConstraints = false
-        titleLabel.font = UIFont.boldSystemFont(ofSize: 18) // Bigger font size
+        titleLabel.font = UIFont.boldSystemFont(ofSize: 30)
         titleLabel.numberOfLines = 2 // Allow multiline for longer titles
         titleLabel.textColor = .gray
         contentView.addSubview(titleLabel)
         
         // Configure description label
         descriptionLabel.translatesAutoresizingMaskIntoConstraints = false
-        descriptionLabel.font = UIFont.systemFont(ofSize: 16) // Bigger font size
+        descriptionLabel.font = UIFont.systemFont(ofSize: 28)
         descriptionLabel.textColor = .gray
-        descriptionLabel.numberOfLines = 3 // Allow multiline for descriptions
+        descriptionLabel.numberOfLines = 2 // Allow multiline for descriptions
         contentView.addSubview(descriptionLabel)
         
         // Configure year label
         yearLabel.translatesAutoresizingMaskIntoConstraints = false
-        yearLabel.font = UIFont.systemFont(ofSize: 16) // Bigger font size
+        yearLabel.font = UIFont.systemFont(ofSize: 28)
         yearLabel.textColor = .gray
         contentView.addSubview(yearLabel)
         
