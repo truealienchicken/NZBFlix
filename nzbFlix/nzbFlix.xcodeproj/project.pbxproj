@@ -1,0 +1,601 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		17A69BD82D0E798C00E2366B /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = 17A69BD72D0E798C00E2366B /* SDWebImage */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		172FDBF22D0D3BAA0015FF0F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 172FDBD62D0D3BA80015FF0F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 172FDBDD2D0D3BA80015FF0F;
+			remoteInfo = nzbFlix;
+		};
+		172FDBFC2D0D3BAA0015FF0F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 172FDBD62D0D3BA80015FF0F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 172FDBDD2D0D3BA80015FF0F;
+			remoteInfo = nzbFlix;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		172FDBDE2D0D3BA80015FF0F /* nzbFlix.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = nzbFlix.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		172FDBF12D0D3BAA0015FF0F /* nzbFlixTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = nzbFlixTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		172FDBFB2D0D3BAA0015FF0F /* nzbFlixUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = nzbFlixUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		173C08D82D0D3E6800007C7A /* Exceptions for "nzbFlix" folder in "nzbFlix" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 172FDBDD2D0D3BA80015FF0F /* nzbFlix */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		172FDBE02D0D3BA80015FF0F /* nzbFlix */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				173C08D82D0D3E6800007C7A /* Exceptions for "nzbFlix" folder in "nzbFlix" target */,
+			);
+			path = nzbFlix;
+			sourceTree = "<group>";
+		};
+		172FDBF42D0D3BAA0015FF0F /* nzbFlixTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = nzbFlixTests;
+			sourceTree = "<group>";
+		};
+		172FDBFE2D0D3BAA0015FF0F /* nzbFlixUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = nzbFlixUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		172FDBDB2D0D3BA80015FF0F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				17A69BD82D0E798C00E2366B /* SDWebImage in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		172FDBEE2D0D3BAA0015FF0F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		172FDBF82D0D3BAA0015FF0F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		172FDBD52D0D3BA80015FF0F = {
+			isa = PBXGroup;
+			children = (
+				172FDBE02D0D3BA80015FF0F /* nzbFlix */,
+				172FDBF42D0D3BAA0015FF0F /* nzbFlixTests */,
+				172FDBFE2D0D3BAA0015FF0F /* nzbFlixUITests */,
+				172FDBDF2D0D3BA80015FF0F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		172FDBDF2D0D3BA80015FF0F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				172FDBDE2D0D3BA80015FF0F /* nzbFlix.app */,
+				172FDBF12D0D3BAA0015FF0F /* nzbFlixTests.xctest */,
+				172FDBFB2D0D3BAA0015FF0F /* nzbFlixUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		172FDBDD2D0D3BA80015FF0F /* nzbFlix */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 172FDC052D0D3BAA0015FF0F /* Build configuration list for PBXNativeTarget "nzbFlix" */;
+			buildPhases = (
+				172FDBDA2D0D3BA80015FF0F /* Sources */,
+				172FDBDB2D0D3BA80015FF0F /* Frameworks */,
+				172FDBDC2D0D3BA80015FF0F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				172FDBE02D0D3BA80015FF0F /* nzbFlix */,
+			);
+			name = nzbFlix;
+			productName = nzbFlix;
+			productReference = 172FDBDE2D0D3BA80015FF0F /* nzbFlix.app */;
+			productType = "com.apple.product-type.application";
+		};
+		172FDBF02D0D3BAA0015FF0F /* nzbFlixTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 172FDC082D0D3BAA0015FF0F /* Build configuration list for PBXNativeTarget "nzbFlixTests" */;
+			buildPhases = (
+				172FDBED2D0D3BAA0015FF0F /* Sources */,
+				172FDBEE2D0D3BAA0015FF0F /* Frameworks */,
+				172FDBEF2D0D3BAA0015FF0F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				172FDBF32D0D3BAA0015FF0F /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				172FDBF42D0D3BAA0015FF0F /* nzbFlixTests */,
+			);
+			name = nzbFlixTests;
+			productName = nzbFlixTests;
+			productReference = 172FDBF12D0D3BAA0015FF0F /* nzbFlixTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		172FDBFA2D0D3BAA0015FF0F /* nzbFlixUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 172FDC0B2D0D3BAA0015FF0F /* Build configuration list for PBXNativeTarget "nzbFlixUITests" */;
+			buildPhases = (
+				172FDBF72D0D3BAA0015FF0F /* Sources */,
+				172FDBF82D0D3BAA0015FF0F /* Frameworks */,
+				172FDBF92D0D3BAA0015FF0F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				172FDBFD2D0D3BAA0015FF0F /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				172FDBFE2D0D3BAA0015FF0F /* nzbFlixUITests */,
+			);
+			name = nzbFlixUITests;
+			productName = nzbFlixUITests;
+			productReference = 172FDBFB2D0D3BAA0015FF0F /* nzbFlixUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		172FDBD62D0D3BA80015FF0F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1620;
+				LastUpgradeCheck = 1620;
+				TargetAttributes = {
+					172FDBDD2D0D3BA80015FF0F = {
+						CreatedOnToolsVersion = 16.2;
+					};
+					172FDBF02D0D3BAA0015FF0F = {
+						CreatedOnToolsVersion = 16.2;
+						TestTargetID = 172FDBDD2D0D3BA80015FF0F;
+					};
+					172FDBFA2D0D3BAA0015FF0F = {
+						CreatedOnToolsVersion = 16.2;
+						TestTargetID = 172FDBDD2D0D3BA80015FF0F;
+					};
+				};
+			};
+			buildConfigurationList = 172FDBD92D0D3BA80015FF0F /* Build configuration list for PBXProject "nzbFlix" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 172FDBD52D0D3BA80015FF0F;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				17A69BD62D0E798C00E2366B /* XCRemoteSwiftPackageReference "SDWebImage" */,
+			);
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 172FDBDF2D0D3BA80015FF0F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				172FDBDD2D0D3BA80015FF0F /* nzbFlix */,
+				172FDBF02D0D3BAA0015FF0F /* nzbFlixTests */,
+				172FDBFA2D0D3BAA0015FF0F /* nzbFlixUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		172FDBDC2D0D3BA80015FF0F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		172FDBEF2D0D3BAA0015FF0F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		172FDBF92D0D3BAA0015FF0F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		172FDBDA2D0D3BA80015FF0F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		172FDBED2D0D3BAA0015FF0F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		172FDBF72D0D3BAA0015FF0F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		172FDBF32D0D3BAA0015FF0F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 172FDBDD2D0D3BA80015FF0F /* nzbFlix */;
+			targetProxy = 172FDBF22D0D3BAA0015FF0F /* PBXContainerItemProxy */;
+		};
+		172FDBFD2D0D3BAA0015FF0F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 172FDBDD2D0D3BA80015FF0F /* nzbFlix */;
+			targetProxy = 172FDBFC2D0D3BAA0015FF0F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		172FDC032D0D3BAA0015FF0F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = appletvos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TVOS_DEPLOYMENT_TARGET = 18.2;
+			};
+			name = Debug;
+		};
+		172FDC042D0D3BAA0015FF0F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = appletvos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				TVOS_DEPLOYMENT_TARGET = 18.2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		172FDC062D0D3BAA0015FF0F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = GVCXLUMS72;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = nzbFlix/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = nzbFlix;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.entertainment";
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIUserInterfaceStyle = Automatic;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.nzbFlix;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 18.0;
+			};
+			name = Debug;
+		};
+		172FDC072D0D3BAA0015FF0F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = GVCXLUMS72;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = nzbFlix/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = nzbFlix;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.entertainment";
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIUserInterfaceStyle = Automatic;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.nzbFlix;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 18.0;
+			};
+			name = Release;
+		};
+		172FDC092D0D3BAA0015FF0F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = GVCXLUMS72;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.nzbFlixTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/nzbFlix.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/nzbFlix";
+				TVOS_DEPLOYMENT_TARGET = 18.2;
+			};
+			name = Debug;
+		};
+		172FDC0A2D0D3BAA0015FF0F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = GVCXLUMS72;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.nzbFlixTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/nzbFlix.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/nzbFlix";
+				TVOS_DEPLOYMENT_TARGET = 18.2;
+			};
+			name = Release;
+		};
+		172FDC0C2D0D3BAA0015FF0F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = GVCXLUMS72;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.nzbFlixUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TEST_TARGET_NAME = nzbFlix;
+			};
+			name = Debug;
+		};
+		172FDC0D2D0D3BAA0015FF0F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = GVCXLUMS72;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.nzbFlixUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TEST_TARGET_NAME = nzbFlix;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		172FDBD92D0D3BA80015FF0F /* Build configuration list for PBXProject "nzbFlix" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				172FDC032D0D3BAA0015FF0F /* Debug */,
+				172FDC042D0D3BAA0015FF0F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		172FDC052D0D3BAA0015FF0F /* Build configuration list for PBXNativeTarget "nzbFlix" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				172FDC062D0D3BAA0015FF0F /* Debug */,
+				172FDC072D0D3BAA0015FF0F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		172FDC082D0D3BAA0015FF0F /* Build configuration list for PBXNativeTarget "nzbFlixTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				172FDC092D0D3BAA0015FF0F /* Debug */,
+				172FDC0A2D0D3BAA0015FF0F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		172FDC0B2D0D3BAA0015FF0F /* Build configuration list for PBXNativeTarget "nzbFlixUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				172FDC0C2D0D3BAA0015FF0F /* Debug */,
+				172FDC0D2D0D3BAA0015FF0F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		17A69BD62D0E798C00E2366B /* XCRemoteSwiftPackageReference "SDWebImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImage.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.20.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		17A69BD72D0E798C00E2366B /* SDWebImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 17A69BD62D0E798C00E2366B /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			productName = SDWebImage;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 172FDBD62D0D3BA80015FF0F /* Project object */;
+}
