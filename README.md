@@ -51,3 +51,8 @@ Now, you can even monitor **current NZBGet downloads** directly from the app.
 1. Install the app on your **tvOS device**.<br>  
 2. Connect to your **Radarr**, **Sonarr**, **nzbGeek**, and **NZBGet** accounts.<br>  
 3. Browse, search, download, and monitor your favorite media seamlessly.<br>  
+
+![Simulator Screenshot - Apple TV - 2024-12-16 at 02 07 39](https://github.com/user-attachments/assets/309e3b64-afd9-4b64-952a-a93c748f819e)
+![Simulator Screenshot - Apple TV - 2024-12-16 at 02 07 55](https://github.com/user-attachments/assets/e626905b-5b18-46fc-ad26-24dc78fdbb40)
+![Simulator Screenshot - Apple TV - 2024-12-16 at 02 08 11](https://github.com/user-attachments/assets/b5523e47-1683-42c8-ac20-c9670616fad2)
+![Simulator Screenshot - Apple TV - 2024-12-16 at 02 08 35](https://github.com/user-attachments/assets/c1945e59-6cd6-436d-90a1-ae7394cffa15)
