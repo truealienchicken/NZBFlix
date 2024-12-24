@@ -3,8 +3,8 @@ import UIKit
 class DownloadProgressViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
     private let tableView = UITableView()
-    private var downloads: [NZBGetDownload] = []
-    private var timer: Timer? // Timer to refresh data
+    private var downloads: [SABnzbdDownload] = []
+    private var timer: Timer?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,8 +22,6 @@ class DownloadProgressViewController: UIViewController, UITableViewDataSource, U
         tableView.dataSource = self
         tableView.delegate = self
         tableView.register(DownloadProgressCell.self, forCellReuseIdentifier: DownloadProgressCell.identifier)
-        
-        // Disable cell selection
         tableView.allowsSelection = false
         
         NSLayoutConstraint.activate([
@@ -35,7 +33,7 @@ class DownloadProgressViewController: UIViewController, UITableViewDataSource, U
     }
     
     private func fetchDownloadQueue() {
-        NZBGetAPIManager.shared.fetchDownloads { [weak self] downloads, error in
+        SABnzbdAPIManager.shared.fetchDownloads { [weak self] downloads, error in
             DispatchQueue.main.async {
                 if let error = error {
                     self?.showError(error)
@@ -48,7 +46,6 @@ class DownloadProgressViewController: UIViewController, UITableViewDataSource, U
     }
     
     private func startAutoRefresh() {
-        // Timer updates every 1 second
         timer = Timer.scheduledTimer(withTimeInterval: 1.0, repeats: true) { [weak self] _ in
             self?.fetchDownloadQueue()
         }
@@ -67,7 +64,7 @@ class DownloadProgressViewController: UIViewController, UITableViewDataSource, U
     
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
-        stopAutoRefresh() // Stop the timer when view disappears
+        stopAutoRefresh()
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -80,12 +77,7 @@ class DownloadProgressViewController: UIViewController, UITableViewDataSource, U
         }
         let download = downloads[indexPath.row]
         cell.configure(with: download)
-        
-        // Disable selection style
         cell.selectionStyle = .none
-        
         return cell
     }
-    
 }
-

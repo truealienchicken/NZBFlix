@@ -66,6 +66,22 @@ class SettingsViewController: UIViewController {
         return textField
     }()
     
+    private let sabnzbdApiKeyLabel: UILabel = {
+        let label = UILabel()
+        label.text = "SABnzbd API Key"
+        label.font = UIFont.systemFont(ofSize: 16)
+        label.translatesAutoresizingMaskIntoConstraints = false
+        return label
+    }()
+    
+    private let sabnzbdApiKeyField: UITextField = {
+        let textField = UITextField()
+        textField.placeholder = "Enter SABnzbd API Key"
+        textField.borderStyle = .roundedRect
+        textField.translatesAutoresizingMaskIntoConstraints = false
+        return textField
+    }()
+    
     private let saveButton: UIButton = {
         let button = UIButton(type: .system)
         button.setTitle("Save", for: .normal)
@@ -93,6 +109,8 @@ class SettingsViewController: UIViewController {
         view.addSubview(radarrApiKeyField)
         view.addSubview(nzbGeekApiKeyLabel)
         view.addSubview(nzbGeekApiKeyField)
+        view.addSubview(sabnzbdApiKeyLabel)
+        view.addSubview(sabnzbdApiKeyField)
         view.addSubview(saveButton)
         
         NSLayoutConstraint.activate([
@@ -128,8 +146,17 @@ class SettingsViewController: UIViewController {
             nzbGeekApiKeyField.topAnchor.constraint(equalTo: nzbGeekApiKeyLabel.bottomAnchor, constant: 8),
             nzbGeekApiKeyField.widthAnchor.constraint(equalTo: view.widthAnchor, multiplier: 0.8),
             
+            sabnzbdApiKeyLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+            sabnzbdApiKeyLabel.topAnchor.constraint(equalTo: nzbGeekApiKeyField.bottomAnchor, constant: 20),
+            sabnzbdApiKeyLabel.widthAnchor.constraint(equalTo: view.widthAnchor, multiplier: 0.8),
+
+            sabnzbdApiKeyField.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+            sabnzbdApiKeyField.topAnchor.constraint(equalTo: sabnzbdApiKeyLabel.bottomAnchor, constant: 8),
+            sabnzbdApiKeyField.widthAnchor.constraint(equalTo: view.widthAnchor, multiplier: 0.8),
+            
             saveButton.centerXAnchor.constraint(equalTo: view.centerXAnchor),
-            saveButton.topAnchor.constraint(equalTo: nzbGeekApiKeyField.bottomAnchor, constant: 40)
+            saveButton.topAnchor.constraint(equalTo: sabnzbdApiKeyField.bottomAnchor, constant: 40)
+
         ])
     }
     
@@ -142,11 +169,13 @@ class SettingsViewController: UIViewController {
         let savedIpAddress = UserDefaults.standard.string(forKey: "ipAddress")
         let savedSonarrApiKey = UserDefaults.standard.string(forKey: "sonarrApiKey")
         let savedRadarrApiKey = UserDefaults.standard.string(forKey: "radarrApiKey")
+        let savedSabnzbdApiKey = UserDefaults.standard.string(forKey: "sabnzbdApiKey")
         
         // Populate text fields with saved values if they exist
         ipAddressField.text = savedIpAddress
         sonarrApiKeyField.text = savedSonarrApiKey
         radarrApiKeyField.text = savedRadarrApiKey
+        sabnzbdApiKeyField.text = savedSabnzbdApiKey
         
         let savedNzbGeekApiKey = UserDefaults.standard.string(forKey: "nzbGeekApiKey")
         nzbGeekApiKeyField.text = savedNzbGeekApiKey
@@ -157,12 +186,15 @@ class SettingsViewController: UIViewController {
         let ipAddress = ipAddressField.text ?? ""
         let sonarrApiKey = sonarrApiKeyField.text ?? ""
         let radarrApiKey = radarrApiKeyField.text ?? ""
+        let sabnzbdApiKey = sabnzbdApiKeyField.text ?? ""
+        let nzbGeekApiKey = nzbGeekApiKeyField.text ?? ""
+        
+        
         
         UserDefaults.standard.set(ipAddress, forKey: "ipAddress")
         UserDefaults.standard.set(sonarrApiKey, forKey: "sonarrApiKey")
         UserDefaults.standard.set(radarrApiKey, forKey: "radarrApiKey")
-        
-        let nzbGeekApiKey = nzbGeekApiKeyField.text ?? ""
+        UserDefaults.standard.set(sabnzbdApiKey, forKey: "sabnzbdApiKey")
         UserDefaults.standard.set(nzbGeekApiKey, forKey: "nabGeekApiKey")
         
         // Show confirmation dialog
